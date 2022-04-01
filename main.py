@@ -11,17 +11,18 @@ print("WEATHER FORECAST")
 print("⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅")
 
 
-city = input("Enter a city name: ")
-request_url = f"{BASE_URL}?appid={os.getenv('API_KEY')}&q={city}&units={'metric'}"
+input_city = input("Enter a city name: ")
+request_url = f"{BASE_URL}?appid={os.getenv('API_KEY')}&q={input_city}&units={'metric'}"
 response = requests.get(request_url)
 
 if response.status_code == 200:
     data = response.json()
-    name = data['name']
-    weather = data['weather'][0]['description']
+
+    city = data['name']
+    weather_description = data['weather'][0]['description']
     temperature = (data["main"]["temp"])
 
     print(
-        f"It's {temperature} °C outside and the weather is {weather} in {name}")
+        f"📰 It is curently {temperature} °C outside and {weather_description} in {city}")
 else:
     print("🚨 An error occurred. Check entered city name or try again later.")
