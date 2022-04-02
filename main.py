@@ -7,7 +7,7 @@ load_dotenv()
 
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
-print("WEATHER FORECAST")
+print("WEATHER STATUS")
 print("⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅")
 
 

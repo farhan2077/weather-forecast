@@ -1,4 +1,4 @@
-# WEATHER FORECAST
+# WEATHER STATUS
 
 ![made with python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square)
 ![code style: prettier](https://img.shields.io/badge/code%20style-autopep8-brightgreen?style=flat-square)
@@ -13,13 +13,13 @@
 1. Download or clone the repository
 
 ```sh
-git clone https://github.com/farhan2077/weather-forecast.git
+git clone https://github.com/farhan2077/weather-status.git
 ```
 
 1. Move into the dirtectory
 
 ```sh
-cd weather-forecast
+cd weather-status
 ```
 
 3. Install dependencies
